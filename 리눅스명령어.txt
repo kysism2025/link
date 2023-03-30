@@ -1,0 +1,28 @@
+ls      : 목록
+pwd  : 현재 경로
+mkdir : make Dir
+rmdir : remove Dir 
+
+=========================================================
+리눅스에서
+복사 ctrl + insert
+붙여넣기 shift + insert
+
+git에 올릴 폴더에서 마우스 오른쪽 버튼을 누르는 경우 Git Bash here선택
+
+[[ git bash 창에서 아래 명령 수행 ]]
+git init
+git remote -v
+git config --global user.name kysism2025
+git config --global user.email kysism2025@gmail.com
+git config --global --list
+git remote -v
+
+
+git remote add origin https://github.com/kysism2025/gitTest.git
+git remote -v  ==> 이후 아래 목록이 나타남
+
+origin  https://github.com/kysism2025/gitTest.git (fetch)
+origin  https://github.com/kysism2025/gitTest.git (push)
+
+git remote remove origin ==> 해제방법

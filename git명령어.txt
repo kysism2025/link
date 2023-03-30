@@ -1,0 +1,74 @@
+git help: 명령어를 잊어버렸다
+git config: 설정
+git init 현재 디렉토리를 Git저장소로 변환
+git status : 파일이 추가되어 있는지 확인
+
+git remote add origin https://github.com/kysism2025/hello
+: 원격저장소에 반영하기 전에 원격 저장소의 정보를 추가
+
+git branch : 전체 baranch확인
+
+초기 default 브랜치를 master에서 main으로 변경하기
+git branch -m master main
+
+초기 전체 pull
+git pull origin main
+
+
+파일추가
+git add  test1.html
+git commit -m test1.html
+git push origin master
+
+스테이징 및 메시지추가
+git add  test1.html
+git commit -ma "staging + message"
+git push origin master
+
+커밋내용확인
+git log
+
+파일삭제
+git rm test1.html
+git commit -m test1.html
+git push origin master
+
+파일복구
+git reset --hard HEAD
+
+git reset HEAD^ : 현재 HEAD의 이전 커밋
+git reset HEAD~n:현재로 부터 n 번째 커밋
+
+(git rm --cached명령어를 사용하여 로컬 디렉토리에서는 파일을 유지하고 저장소에서만 삭제)
+
+=========================
+git branch subdir01 : 브랜치생성
+git checkout subdir01 : 해당 브랜치로 이동
+==> git checkout -b subdir01(생성 및 이동 한번에 처리)
+
+추가하기
+git add hello1.html
+git commit -m hello1.html
+git push origin subdir01
+=========================
+삭제하기
+
+git rm exam24.html
+git commit -m 'delete exam24.html'
+git push origin master
+=========================
+
+다른 개발자 PC
+git checkout subdir01 : subdir로 이동
+git pull : 다 가져오기
+
+=========================
+병합하기
+git checkout master 로 이동
+git merge subdir01 병합
+git push origin master
+
+=========================
+branch 추가/삭제하기
+git branch subdir01 : branch추가
+git branch -d subdir01 : branch삭제

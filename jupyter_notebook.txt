@@ -1,0 +1,2 @@
+anaconda에서 jyupter notebook실행방법
+python -m notebook
