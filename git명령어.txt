@@ -18,7 +18,7 @@ git pull origin main
 파일추가
 git add  test1.html
 git commit -m test1.html
-git push origin master
+git push origin main
 
 스테이징 및 메시지추가
 git add  test1.html
